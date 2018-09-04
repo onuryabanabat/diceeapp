@@ -6,17 +6,13 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.Toast;
-
 import java.util.Random;
-import java.util.concurrent.TimeUnit;
-import java.util.jar.JarEntry;
+
 
 public class MainActivity extends AppCompatActivity {
 
     int number;
     int number2;
-    Random randomNumberGenerator;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
                 };
 
                 Log.d("Dicee","Ze Button has been pressed");
-                for(int i = 0; i < 20009; i++) {
+                for(int i = 0; i < 2000; i++) {
                     Random random = new Random();
                     number = random.nextInt((5 - 0) + 1) + 0;
 
